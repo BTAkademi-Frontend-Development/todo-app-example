@@ -48,3 +48,9 @@ function deleteTodo(e) {
 
     item.classList.add('todo-list-item-fall');
 }
+
+document.getElementById('clearAll').addEventListener('click', handleClearAll);
+
+function handleClearAll(e) {
+    document.querySelector('ul').innerHTML = '';
+}
